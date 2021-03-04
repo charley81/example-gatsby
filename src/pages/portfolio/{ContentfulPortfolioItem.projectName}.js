@@ -12,8 +12,11 @@ export const query = graphql`
   }
 `
 
-const PortfolioItem = props => {
-  return <pre>{JSON.stringify(props, null, 2)}</pre>
+export default function PortfolioItem(props) {
+  return (
+    <>
+      <h1>A thing...</h1>
+      <pre>{JSON.stringify(props, null, 2)}</pre>
+    </>
+  )
 }
-
-export default PortfolioItem
